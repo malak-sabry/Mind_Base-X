@@ -1,0 +1,5 @@
+
+ALTER TABLE public.crm_accounts
+  ADD COLUMN IF NOT EXISTS impact_percent NUMERIC NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS outcome_summary TEXT NOT NULL DEFAULT '',
+  ADD COLUMN IF NOT EXISTS onboarded_at DATE;

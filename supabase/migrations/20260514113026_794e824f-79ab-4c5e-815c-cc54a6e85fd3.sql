@@ -1,0 +1,1 @@
+ALTER TABLE public.employees ADD COLUMN IF NOT EXISTS access_level text NOT NULL DEFAULT 'employee';
